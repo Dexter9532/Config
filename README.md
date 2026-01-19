@@ -1,48 +1,40 @@
-# Neovim Configuration
+# Neovim / LazyVim configuration
 
-This repository contains my personal Neovim / LazyVim configuration.
+This repository contains my personal Neovim (LazyVim) configuration.
 
 ## Requirements
 
-Before cloning this repository, you need:
-
-1. Neovim installed 
-2. Git installed
+* Neovim
+* Git
 
 ## Installation
 
-1. Clone the repository to any location:
-```
-git clone git@github.com:Dexter9532/Config.git
+Backup any existing Neovim config (safe step):
+
+```bash
+mv ~/.config/nvim ~/.config/nvim_backup_$(date +%Y%m%d) 2>/dev/null
 ```
 
-2. Remove or rename any existing Neovim configuration:
-```
-mv ~/.config/nvim ~/.config/nvim_backup
+Clone this repository directly to Neovim’s config directory:
+
+```bash
+git clone git@github.com:Dexter9532/Config.git ~/.config/nvim
 ```
 
-3. Create a symbolic link so Neovim uses this repository as its configuration directory:
-```
-ln -s ~/path-to-your-dir ~/.config/nvim
-```
+Start Neovim:
 
-4. Start Neovim:
-```
+```bash
 nvim
 ```
 
-LazyVim will automatically install all plugins on the first startup.
+LazyVim will automatically install all plugins on first startup.
 
 ## Updating
 
-Make changes directly in this repository and restart Neovim to load them.
+Pull latest changes:
 
-## Backup
-
-Your previous configuration is stored in:
+```bash
+cd ~/.config/nvim
+git pull
 ```
-~/.config/nvim_backup
-```
-
-You can delete it when you are sure everything works.
 
