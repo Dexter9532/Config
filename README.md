@@ -71,3 +71,17 @@ Quick notes:
 
 - Keep one plugin per spec block in `all.lua` for easy toggling.
 - Use `enabled = true/false` as your on/off switch.
+
+## Formatting Style
+
+Lua formatting is controlled by:
+
+- `stylua.toml`
+
+So if formatting output changes, check this file first.
+
+## Theme Picker
+
+To change theme quickly inside Neovim, use:
+
+- `<leader>ct` (opens Telescope colorscheme picker)
