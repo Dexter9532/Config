@@ -245,6 +245,16 @@ return {
     end,
   },
 
+
+  -- Project search and replace
+  {
+    "MagicDuck/grug-far.nvim",
+    cmd = "GrugFar",
+    keys = {
+      { "<leader>sr", "<cmd>GrugFar<cr>", desc = "Search and Replace" },
+    },
+  },
+
   -- Toggleterm
   {
     "akinsho/toggleterm.nvim",
