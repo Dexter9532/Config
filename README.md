@@ -82,9 +82,22 @@ So if formatting output changes, check this file first.
 
 ## Theme Picker
 
-To change theme quickly inside Neovim, use:
+To preview themes quickly inside Neovim, use:
 
 - `<leader>ct` (opens Telescope colorscheme picker)
+
+To set the startup/default theme permanently, edit:
+
+- `lua/plugins/all.lua`
+
+Set this block to your preferred colorscheme:
+
+```lua
+{
+  "LazyVim/LazyVim",
+  opts = { colorscheme = "retrobox" },
+},
+```
 
 ## Header
 
