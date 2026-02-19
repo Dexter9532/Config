@@ -44,3 +44,30 @@ This commandos can be executed from neovim cmd-line using `:`
 
 - Mason (Plugin installer)
 - Lazy (See installed plugins, update, turn off plugins)
+
+## Plugin Setup And Disable
+
+All plugin specs are centralized in:
+
+- `lua/plugins/all.lua`
+
+To disable a plugin, set `enabled = false` on that plugin spec.
+
+Example:
+
+```lua
+{
+  "pocco81/auto-save.nvim",
+  enabled = false,
+}
+```
+
+After changes, restart Neovim and run:
+
+- `:Lazy sync` (apply plugin install/remove changes)
+- `:Lazy` (inspect loaded/disabled plugins)
+
+Quick notes:
+
+- Keep one plugin per spec block in `all.lua` for easy toggling.
+- Use `enabled = true/false` as your on/off switch.
