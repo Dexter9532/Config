@@ -1,5 +1,7 @@
 # Neovim / LazyVim configuration
 
+![Vim Logo](./assets/vim-logo.svg)
+
 This repository contains my personal Neovim (LazyVim) configuration.
 
 ## Requirements
